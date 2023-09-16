@@ -30,13 +30,3 @@ int main  () {
 
     return 0;
 }
-/*
- *  for ( int i=0;i<3;i+=1)/*func > 0 && func < pow(10.0,-k)
-{
-answ=answ +pow(x,n)* pow(-1,n-1) / n ;n++;
-int a=int( answ*pow(10,k)), b=int(func*pow(10,k)); // пока все k цифры не совпадут не заканчивать
-std:: cout << answ<<endl<<a<<endl<<b<<endl;
-}
-
-
-*/
