@@ -1,10 +1,10 @@
-#include <iostream>
+#include <iostream>//   ввод/вывод
 #include "iomanip"
-#include <cmath>//   ввод/вывод
+#include <cmath>
 using namespace std;
 
 int main  () {
-   double x, answ , a , b , func;
+   double x, answ(0) , a(0) , b(1) , func;
    int k , n ( 1 );
     std:: cout << "Vvedite x "<< endl ;
     std:: cin >> x;
@@ -18,8 +18,9 @@ int main  () {
     else {
         while ( a != b )  {
               answ = answ + pow (x ,n ) * pow (-1, n - 1) / n ; n++;
-              a = int ( answ * pow (10,k)), b = int ( func * pow (10,k ) ); // пока все k цифры не совпадут не заканчивать
-            //  std:: cout << answ << endl << a << endl << b << endl; // выводит значение на каждом к, не обязательно
+              a = int ( answ * pow (10,k));
+              b = int ( func * pow (10,k ) ); // пока все k цифры не совпадут не заканчивать
+             //std:: cout << answ << endl << a << endl << b << endl; // выводит значение на каждом к, не обязательно
     }
         std:: cout << setprecision(k+1) << answ << endl;
     }
