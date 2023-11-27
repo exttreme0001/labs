@@ -11,7 +11,7 @@ int main  () {
     std:: cout << "Vvedite tochnost  "<< endl ;
     std:: cin >> k;
 
-  func = log (1+x );
+  func = log (1+x ); 
     std:: cout << setprecision(k) << func << endl ;
 
     if ( k < 1 || x>1 || x <= -1|| k>11 ){std:: cout <<"used wrong x or k";return 0;}
